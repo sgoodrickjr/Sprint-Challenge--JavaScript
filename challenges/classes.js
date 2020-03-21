@@ -32,7 +32,7 @@ class CubeMaker extends CuboidMaker {
       return this.length * this.width * this.height;
   }
   surfaceArea() {
-      return 2 * (length * width + length * height + width * height);
+      return 6 * (length^2);
   }
 }
 

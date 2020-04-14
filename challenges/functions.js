@@ -6,8 +6,8 @@
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
-function consume(a, b, cb) {
-  let combinedTotal = a + b;
+function consume(num1, num2, cb) {
+  let combinedTotal = num1 + num2;
   return cb(combinedTotal);
 }
 
@@ -19,14 +19,17 @@ function consume(a, b, cb) {
 */
 function add(num1, num2) {
   let sum = num1 + num2;
+  return sum;
 }
 
 function multiply(num1, num2) {
   let product = num1 * num2;
+  return product;
 }
 
 function greeting(firstName, lastName) {
-  let greeting = `"Hello " + ${firstName} + ${lastName} + ", nice to meet you!"`;
+  let greeting = `Hello ${firstName} ${lastName}, nice to meet you!`;
+  return greeting;
 }
 
 
